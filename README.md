@@ -1,4 +1,4 @@
-# Suricata IDS Home-Lab
+# Suricata IDS
 
 ## ℹ️Overview
 
@@ -121,7 +121,6 @@ alert http any any -> any any (msg:"Metasploit CSRF Attack Detected"; content:"C
   alert http any any -> any any (msg:"Metasploit Authentication Bypass Attempt Detected"; content:"Admin=true"; sid:100019;)
   ```
 
-## Need Training
 
 
 
