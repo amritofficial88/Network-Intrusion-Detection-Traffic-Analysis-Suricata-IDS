@@ -1,20 +1,10 @@
 # Suricata IDS
 
-## ℹ️Overview
+## Overview
 
 The goal of setting up a Suricata home-lab is to gain practical experience in deploying and configuring an Intrusion Detection System (IDS) for network security monitoring. Suricata is an open-source IDS capable of detecting and preventing various network-based threats. This home-lab provides individuals with hands-on experience in setting up, configuring, and utilizing Suricata to enhance network security.  
-![Blue Sand White Beach Simple Watercolor Etsy Shop Banner (2)](https://github.com/0xrajneesh/Suricata-IDS-Home-Lab/assets/40385860/328b7120-7f15-4436-9885-de6ffbcb8063)
 
-In this home-lab, we will cover:
-- [Requirement](https://github.com/0xrajneesh/Suricata-IDS-Home-Lab?tab=readme-ov-file#requirements)
-- [Lab Diagram](https://github.com/0xrajneesh/Suricata-IDS-Home-Lab?tab=readme-ov-file#%EF%B8%8Flab-diagram)
-- [Setting up the Suricata Home-Lab](https://github.com/0xrajneesh/Suricata-IDS-Home-Lab?tab=readme-ov-file#-setting-up-the-suricata-home-lab)
-- [Excercises- Network-based attacks](https://github.com/0xrajneesh/Suricata-IDS-Home-Lab?tab=readme-ov-file#excercises--network-based-attacks)
-- [Excercises- Web-based attacks](https://github.com/0xrajneesh/Suricata-IDS-Home-Lab?tab=readme-ov-file#excercises--web-based-attacks)
-- Need Training?
-
-
-## 🧮Requirements
+## Requirements
 
 - **Hardware**:
   - Computer with at least 16GB RAM and dual-core processor
@@ -22,7 +12,7 @@ In this home-lab, we will cover:
   - Windows Machine(Victim Machine)
   - Kali Linux(Attacker Machine)
 
-## 🖼️Lab Diagram
+## Lab Diagram
 
 ![Home-Lab (3)](https://github.com/0xrajneesh/Home-Lab/assets/40385860/f7891499-7a73-4f03-99dc-df2a2720904c)
 
@@ -46,7 +36,7 @@ In this home-lab, we will cover:
  
 
 
-## 🧑‍💻Excercises- Network-based attacks
+##  Network-based attacks Tasks
 -  **Nmap Stealth Scan Detection**: Create a Suricata rule to detect TCP SYN packets sent to multiple ports within a short time frame, indicative of Nmap stealth scans.
   ```yaml
 alert tcp any any -> any any (msg:"Nmap Stealth Scan Detected"; flags:S; threshold: type threshold, track by_src, count 5, seconds 10; sid:100001;)
@@ -78,7 +68,7 @@ alert tcp any any -> any any (msg:"Meterpreter Communication Detected"; content:
   alert tcp any any -> any any (msg:"Metasploit Credential Harvesting Activity Detected"; content:"LDAP" content:"SMB"; sid:100009;)
   ```
 
-## 🧑‍💻Excercises- Web-based attacks
+## Web-based attacks Tasks
 
 -  **Web Server Enumeration Detection**: Develop a Suricata rule to detect Nmap web server enumeration attempts by monitoring for excessive HTTP GET requests to various URIs.
 ```yaml
