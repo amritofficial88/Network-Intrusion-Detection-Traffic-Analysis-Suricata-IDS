@@ -1,4 +1,4 @@
-# Suricata IDS
+# Suricata IDS Project
 
 ## Overview
 
