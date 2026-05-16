@@ -30,11 +30,6 @@ The goal of setting up a Suricata home-lab is to gain practical experience in de
 
 - **Setting up Victim Server-2**
   -  Import Metasploitable 2 OVA Image
- 
-- **Setting up Victim Server-3**
-  -  Import Typhoon OVA image
- 
-
 
 ##  Network-based attacks task been done: (referenced from rajneesh security)
 -  **Nmap Stealth Scan Detection**: Create a Suricata rule to detect TCP SYN packets sent to multiple ports within a short time frame, indicative of Nmap stealth scans.
