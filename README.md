@@ -36,7 +36,7 @@ The goal of setting up a Suricata home-lab is to gain practical experience in de
  
 
 
-##  Network-based attacks Tasks
+##  Network-based attacks task been done: (referenced from rajneesh security)
 -  **Nmap Stealth Scan Detection**: Create a Suricata rule to detect TCP SYN packets sent to multiple ports within a short time frame, indicative of Nmap stealth scans.
   ```yaml
 alert tcp any any -> any any (msg:"Nmap Stealth Scan Detected"; flags:S; threshold: type threshold, track by_src, count 5, seconds 10; sid:100001;)
